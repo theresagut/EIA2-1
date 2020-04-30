@@ -9,11 +9,7 @@ var L02_BlackmailerCompanion;
         mail.addEventListener("click", placeLetter);
         document.addEventListener("keydown", chooseCharacter);
     }
-    function placeLetter(_event) {
-        // console.log(_event);
-        let x = _event.offsetX;
-        let y = _event.offsetY;
-        let mail = _event.target;
+    function placeLetter(_event)
         let letter = document.createElement("span");
         mail.appendChild(letter);
         letter.textContent = chosenCharacter;
@@ -30,5 +26,6 @@ var L02_BlackmailerCompanion;
         let parent = target.parentNode;
         parent.removeChild(target);
     }
-})(L02_BlackmailerCompanion || (L02_BlackmailerCompanion = {}));
+
+    (L02_BlackmailerCompanion || (L02_BlackmailerCompanion = {}));
 //# sourceMappingURL=BlackmailerCompanion.js.map
