@@ -1,0 +1,92 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Haushaltshilfe </title>
+    <link rel="stylesheet" href="style.css">
+    <script> src="Haushaltshilfe.js" </script>
+</head>
+<body>
+    <header> 
+      <h1>Haushaltshilfe</h1>
+    </header>
+<form>
+<!--Auswahlmöglichkeiten-->
+    <div id="Auswahlbereich">
+        <fieldset id="auswahl">
+            <p>Wählen Sie Ihre gewünschte Erledingung aus.</p>
+            <input type="checkbox" name="Auswahl" value="Einkaufen" id="selecteinkaufen">Einkaufen
+            <input type="checkbox" name="Auswahl" value="Haushaltsarbeit" id="selectarbeit">Haushaltsarbeiten
+            <input type="checkbox" name="Auswahl" value="Geldtransaktion" id="selectgeld">Geldtransaktion
+        <br>
+        </fieldset>
+<!--Einkaufen-->
+        <fieldset id="einkauf">
+        <p>Einkaufen</p>
+        <div id="Artikelauswahl">
+            <input type="checkbox" name="Artikel" id="apfel" class="article" value="Apfel" price="2.29">
+            <p for="Apfel">Apfel</p>
+            <input type="checkbox" name="Artikel" id="honig" class="article" value="Honig" price="4.49">
+            <p for="Honig">Honig</p>
+            <input type="checkbox" name="Artikel" id="brot" class="article" value="Brot" price="3.50">
+            <p for="Brot">Brot</p>
+            <input type="checkbox" name="Artikel" id="wasser" class="article" value="Wasser" price="1.19">
+            <p for="Wasser">Wasser</p>
+            <input type="checkbox" name="Artikel" id="nutella" class="article" value="Nutella" price="3.99">
+            <p for="Nutella">Nutella</p>   
+         </div>
+         <div id="slider">
+            <span>
+                Menge: <br>
+                1
+                <input  type="range" min="1.0" max="20.0" name="Menge" step="2.0" value="2.0">
+                20
+                <progress max="20.0"></progress>
+            </span>
+         <div id="selectOrt">
+             <input name="märkte" list="market" placeholder="Wählen Sie einen Markt" value="" id="Markt"/>
+             <datalist id="Markt">
+                 <option name="Edeka" value="Edeka">Edeka</option>
+                 <option name="Netto" value="Netto">Netto</option>
+                 <option name="Aldi" value="Aldi">Aldi</option>
+                 <option name="Lidl" value="Lidl">Lidl</option>
+             </datalist>
+         </div>
+        </fieldset>
+
+<!--Haushaltsarbeiten-->
+<fieldset id="Haushaltsarbeiten">
+    <p>Haushaltsarbeiten</p>
+    <input type="checkbox" id="spülmaschine" value="Spülmaschine ausräumen" price="5" name="toDo">
+    <p for="spülmaschine">Spülmaschine ausräumen</p>
+    <input type="checkbox" id="blumen" value="blumen gießen" price="10" name="toDo">
+    <p for="blumen">Blumen gießen</p>
+    <input type="checkbox" id="staubsaugen" value="Staubsaugen" price="12" name="toDO">
+    <p for="staubsaugen">Staubsaugen</p>
+</fieldset>
+<!--Geldtransaktion-->
+<fieldset id="geld">
+    <p>Geld abheben</p>
+    0 Euro<input type="range" min="0" max="500" value="0" id="cash" step="10" name="Cash">200 Euro
+    <progress for=" cash" max="10"></progress>
+</fieldset>
+
+       <p>Geldtransaktion</p>
+    <input type="radio" name="radiogroup" value="Bar" id="bar" name="money">
+    <p for="bar">Barzahlung</p>
+    <input type="radio" name="radiogroup" value="Überweisung" id="überweisung" name="money">
+    <p for="überweisung">Überweisung</p>
+    <input type="radio" name="radiogroup" value="PayPal" id="paypal" name="money">
+    <p for="paypal">PayPal</p>
+</fieldset>
+        
+    </div>
+</form>
+
+<div id="orderlist">
+    <p id="totalorder">TOTAL</p>
+</div>
+
+</body>
+</html>

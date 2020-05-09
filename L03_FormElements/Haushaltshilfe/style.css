@@ -1,0 +1,44 @@
+h1{
+ font-family: fantasy;
+ font-weight: bold;
+ text-align: left;   
+}
+p{
+    font-size: medium;
+    font-style: inherit;
+    color: darkblue;
+}
+#Auswahlbereich{
+    width: 600px;
+    float: left;
+}
+#Artikelauswahl{
+    text-align: left;
+}
+#slider{
+    float: left;
+    text-align: right;
+}
+#Markt{
+    width: 170px;
+    height: 30px;
+    margin-left: 30px;
+}
+#selectOrt{
+    text-align: right;
+}
+input[type="radio"], input[type="checkbox"], p{
+    display: inline;
+}
+p::after{
+    content: "";
+    display: block;
+}
+
+#list{
+    border: black;
+    margin-left: 50px;
+    width: 500px;
+    height: auto;
+    float: left;
+}
