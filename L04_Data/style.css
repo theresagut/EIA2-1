@@ -1,0 +1,150 @@
+h1{
+ font-family: fantasy;
+ font-weight: bold;
+ text-align: center;   
+}
+body{
+    background-color: #bababa;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+p{
+    font-size: medium;
+    font-style: inherit;
+    color: darkblue;
+}
+#form{
+    width: 60px;
+    height: auto;
+    float: left;
+}
+#list{
+    width: 50px;
+    height: auto;
+    border: solid;
+    float: left;
+    margin-left: 5%;
+}
+#delete{
+    position: relative;
+    left: 25%;
+    top: 20px;
+    width: 15%;
+    height: 40px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    background: beige;
+    box-shadow: beige;
+}
+fieldset {
+    border: 1px solid rgb(red, green, blue);
+}
+legend{
+    margin-top: 3%;
+}
+#Ort{
+    width: 20%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    border: none;
+
+}
+#hilfe{
+    margin-top: 3%;
+}
+
+#button2{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    width: 13%;
+    height: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: seashell;
+    border: none;
+    border-radius:  4px;
+    background: beige;
+    box-shadow: beige;
+}
+#button2:hover{
+    color: #ffffff;
+}
+#geld {
+    margin-top: 3%;
+}
+
+#button3 {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    width: 13%;
+    height: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: seashell;
+    border: none;
+    border-radius:  4px;
+    background: beige;
+    box-shadow: beige;
+}
+
+#button3:hover{
+    color: #ffffff;
+}
+#bezahlung {
+    margin-top: 3%;
+}
+
+#button4{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    width: 13%;
+    height: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: seashell;
+    border: none;
+    border-radius:  4px;
+    background: beige;
+    box-shadow: beige;
+}
+
+#button4:hover{
+    color: #ffffff;
+}
+
+#button1 {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    width: 13%;
+    height: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: seashell;
+    border: none;
+    border-radius:  4px;
+    background: beige;
+    box-shadow: beige;
+}
+#button1:hover {
+    color: #ffffff;
+}
+
+select{
+    width: 90%;
+    height: 30px;
+    margin-top: 3%;
+    border: none;
+}

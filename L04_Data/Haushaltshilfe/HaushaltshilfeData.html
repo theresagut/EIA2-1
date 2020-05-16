@@ -1,0 +1,84 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Haushaltshilfe </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Haushaltshilfe.js"></script>
+    <script src="Data.js"></script>
+    <script src="Generate.js"></script>
+</head>
+
+<body>
+
+    <header> 
+      <h1>Haushaltshilfe</h1>
+    </header>
+
+<form>
+    <div id="form">
+
+<!--Auswahlmöglichkeiten-->
+         <fieldset id="auswahl">
+            <p>Wählen Sie Ihre gewünschte Erledingung aus.</p>
+            <input type="checkbox" name="Auswahl" value="Einkaufen" id="selecteinkaufen">Einkaufen
+            <input type="checkbox" name="Auswahl" value="Haushaltsarbeit" id="selectarbeit">Haushaltsarbeiten
+            <input type="checkbox" name="Auswahl" value="Geldtransaktion" id="selectgeld">Geldtransaktion
+        <br>
+        </fieldset>
+
+<!--Einkaufen-->
+
+        <fieldset id="einkauf">
+        <legend>Einkaufen</legend>
+        <div id="slider">
+            <span>
+                Menge: <br>
+                1
+                <input  type="range" min="1.0" max="20.0" name="Menge" step="2.0" value="2.0">
+                20
+            </span>
+        </div>
+        <legend>Artikel:</legend>
+        <button id="btn1" type="button">Take it</button>
+        </fieldset>
+
+<!--Markt wählen-->
+
+        <fieldset id="Ort" name="Ort">
+            <p>Wählen Sie einen Markt</p>
+        </fieldset>
+
+
+<!--Haushaltsarbeiten-->
+
+<fieldset id="hilfe">
+    <legend>Haushaltsarbeiten</legend>
+    <button id="btn2" type="button">Take it</button>
+</fieldset>
+
+
+<!--Geldtransaktion-->
+
+<fieldset id="geld">
+   <legend>Geld abheben</legend>
+    0 Euro<input type="range" min="0" max="500" value="0" id="cash" step="10" name="Cash">200 Euro
+    <button id="btn3" type="button">Take it</button>
+</fieldset>
+
+<fieldset id="bezahlung">
+    <legend>Zahlungsart</legend>
+    <button id="btn4" type="button">Take it</button>
+</fieldset>
+
+</div>
+</form>
+
+<div id="list">
+    <p id="totalprice"></p>
+</div>
+<button id="delete" type="button">Löschen</button>
+
+</body>
+</html>
