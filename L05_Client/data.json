@@ -1,0 +1,78 @@
+{
+    "einkauf":[
+        {
+            "name": "Honig | 4.99$ ",
+            "price": 2.99
+        },
+        {
+            "name":"Milch | 0.99$ ",
+            "price":0.99
+        },
+        {
+            "name":"Äpfel | 3.59$ ",
+            "price":3.59
+        },
+        {
+            "name":"Mehl | 0.55$ ",
+            "price":0.55
+        },
+        {
+            "name":"Brot | 2.49$ ",
+            "price":2.49
+        },
+        {
+            "name":"Nutella | 2.79$ ",
+            "price":2.79
+        }
+    ],
+    "Ort":[
+        {
+            "name":"Netto",
+            "price":0
+        },
+        {
+            "name":"Rewe",
+            "price":0
+        },
+        {
+            "name":"Aldi",
+            "price":0
+        },
+        {
+            "name":"Lidl",
+            "price":0
+        },
+        {
+            "name":"Edeka",
+            "price":0
+        }
+    ],
+    "hilfe":[
+        {
+            "name":"Saugen | 20$",
+            "price":20
+        },
+        {
+            "name":"Rasen mähen | 15$",
+            "price":15
+        },
+        {
+            "name":"Fenster putzen | 12$",
+            "price":12
+        }
+    ],
+    "bezahlung":[
+        {
+            "name":"Bar",
+            "price":0
+        },
+        {
+            "name":"PayPal",
+            "price":0
+        },
+        {
+            "name":"Überweisung",
+            "price":0
+        }
+    ]
+}
