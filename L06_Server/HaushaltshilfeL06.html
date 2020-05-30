@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haushaltshilfe</title>
+    <link rel="stylesheet" href="L06Haushaltshilfe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="InterfaceL06.js"></script>
+    <script src="GeneratecontentL06.js"></script>
+</head>
+
+<body>
+    <h1>Haushaltshilfe</h1>
+    <p>Wählen Sie unter folgenden Kategorien aus! </p>
+
+    <form id="form" method="GET">
+        <div>
+            <fieldset id="grocery" >
+                <legend>Einkaufen</legend>
+                <fieldset id="product">
+                </fieldset>
+               
+                <fieldset id="market" >
+                </fieldset><!-- 
+                <button id="cart" type="button">Zur Bestellung hinzufügen</button> -->
+            </fieldset>
+            <fieldset id="money" >
+                <legend>Geld abheben/ einzahlen</legend>
+                <span id="sliderr">
+                    <span class="money">
+                        0
+                        <input disabled price="0" type="range" name="bargeld" min="0" max="150" id="Bank" step="5" value="0">
+                        150
+                    </span>
+                </span>
+                <!-- <button id="getCash" type="button">Zur Bestellung hinzufügen</button> -->
+            </fieldset>
+
+            <fieldset id="household" >
+                <legend>Haushaltsarbeiten</legend>
+            </fieldset>
+            <button id="householdDone" type="button">Auswahl zur Bestellung hinzufügen</button>
+        </div>
+    </form>
+    <div id="order">
+        <h3>Bestellübersicht</h3>
+        <table id="table">
+            <tr>
+                <th>Artikel</th>
+                <th>Preis</th>
+                <th>Menge</th>
+                <th>Einheit</th>
+                <th>Gebühr</th>
+                <th>Zusätzliche Informationen</th>
+            </tr>
+        </table>
+        <table id="table2">
+            <tr>
+                <th>Erledigung</th>
+                <th>Preis</th>
+            </tr>
+        </table>
+        <table id="table3">
+            <tr>
+                <th>Erledigung</th>
+                <th>Einheit</th>
+                <th>Preis</th>
+            </tr>
+        </table>
+        <label for="date">Lieferdatum</label> <input id="date" type="date" min="2020-05-14">
+        <label id="totalPrice"><strong>Gesamtpreis: </strong>0.00€</label><br>
+        <fieldset id="zahlungsart">
+        </fieldset>
+        <button type="button" id="submitButton" form="form">Bestellung abschicken</button>
+        <button type="reset" id="resetButton" form="form" class="fa fa-undo"></button>
+</body>
+<script src="HaushaltshilfeL06.js"> </script>
+
+</html>
