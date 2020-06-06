@@ -1,8 +1,9 @@
-namespace Haushaltshilfe5 {
+namespace Haushaltshilfe_7 {
     window.addEventListener("load", handleLoad);
     let totalCost: number = 0;
-    let form: HTMLFormElement = <HTMLFormElement>document.querySelector("#form");
-    let totalprice: HTMLLabelElement = <HTMLLabelElement>document.querySelector("#totalprice");
+    //let form: HTMLFormElement = <HTMLFormElement>document.querySelector("#form");
+    let totalprice: HTMLLabelElement = <HTMLLabelElement>document.getElementById("totalprice");
+    let url: string = "https://hfucocktailbar.herokuapp.com/";
 
 
 
@@ -33,8 +34,10 @@ namespace Haushaltshilfe5 {
         console.log("send order");
         let formData: FormData = new FormData(document.forms[0]);
         let query: URLSearchParams = new URLSearchParams(<any>formData);
-        await fetch("index.html?" + query.toString());
-        alert("Order sent!");
+        let response: Response = await fetch (url + "?" + query.toString());
+        let responseText: string = await response.text();
+        //await fetch("index.html?" + query.toString());
+        alert(responseText);
     }
 
 
@@ -111,5 +114,6 @@ namespace Haushaltshilfe5 {
     }
 
 }
+
 
 
